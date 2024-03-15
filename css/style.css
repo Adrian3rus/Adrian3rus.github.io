@@ -30,7 +30,12 @@ header img {
     border-radius: 5px; /* Esquinas redondeadas para la imagen (opcional) */
     }
 
-
+    .marquee-container {
+        max-width: 80%; /* Ancho máximo del contenedor */
+        overflow: hidden; /* Oculta el desbordamiento del texto */
+        margin: 0 auto; /* Centrar el contenedor */
+      }
+      
     .marquee {
         white-space: nowrap;
         overflow: hidden;
