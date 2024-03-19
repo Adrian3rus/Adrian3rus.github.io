@@ -1,14 +1,21 @@
-
-function abrirWhatsApp() {
-    // Reemplaza "TU_NUMERO_DE_TELEFONO" con tu número de teléfono en formato internacional
-    var numeroTelefono = "541130031832";
-
-    // Construye el enlace para abrir WhatsApp en el navegador web
-    var enlaceWeb = "https://api.whatsapp.com/send?phone=" + numeroTelefono;
-
-    // Abre WhatsApp Business en una nueva ventana o pestaña
-    window.open(enlaceWeb, "_blank");
+// Opcional: Ocultar el icono de WhatsApp en pantallas pequeñas
+window.addEventListener('resize', function() {
+  if (window.innerWidth < 768) {
+      document.querySelector('.whatsapp-float').style.display = 'none';
+  } else {
+      document.querySelector('.whatsapp-float').style.display = 'block';
   }
+});
+
+// Opcional: Mostrar el icono de WhatsApp al hacer scroll
+window.addEventListener('scroll', function() {
+  var whatsappIcon = document.querySelector('.whatsapp-float');
+  if (window.scrollY > 100) {
+      whatsappIcon.style.display = 'block';
+  } else {
+      whatsappIcon.style.display = 'none';
+  }
+});
 
   document.addEventListener('DOMContentLoaded', function() {
     const prevButton = document.getElementById('prevBtn');
