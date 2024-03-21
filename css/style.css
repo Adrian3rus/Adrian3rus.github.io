@@ -6,6 +6,10 @@ body {
     text-align: center;
     /*background-color: #f7f7f7; /* Color de fondo suave */
     }
+  
+.P {
+  font-size: medium;
+}
 
 .content {
         max-width: 800px; /* Ancho máximo del contenido */
@@ -205,8 +209,8 @@ header img {
     
     .slide.active {
       display: block; /* Mostrar solo el elemento activo */
-      background-color: #f0f0f0; /* Cambiar el color de fondo del elemento activo */
-      border: 2px solid #333; /* Añadir un borde al elemento activo */
+      background-color: #fffdfd; /* Cambiar el color de fondo del elemento activo */
+      border: 2px solid #ffffff; /* Añadir un borde al elemento activo */
       border-radius: 5px; /* Redondear las esquinas del borde */
     }
     
